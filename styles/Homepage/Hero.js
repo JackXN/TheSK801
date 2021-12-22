@@ -9,12 +9,14 @@ backgroundRepeat: 'no-repeat',
 backgroundPosition: 'center',
 
 
+
 },
 imageContainer: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     pt: ['30px'],
+
 }
 }
 

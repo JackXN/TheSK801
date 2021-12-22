@@ -34,7 +34,7 @@ const Navbar = () => {
               my={5}
               w="100%"
             >
-              Home
+              Login
                     </Button>
           </NextLink>
 
@@ -46,7 +46,7 @@ const Navbar = () => {
               my={5}
               w="100%"
             >
-              About
+              Sign Up
                     </Button>
           </NextLink>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
               my={5}
               w="100%"
             >
-              Contact
+              About
                     </Button>
           </NextLink>
         </Flex>
@@ -66,19 +66,16 @@ const Navbar = () => {
         {/* Mobile */}
         <IconButton
           aria-label="Open Menu"
-          size="lg"
+          size="md"
           mr={2}
           icon={
-            <HamburgerIcon />
+            <HamburgerIcon color='white'/>
           }
+          bg='transparent'
           onClick={() => changeDisplay('flex')}
           display={['flex', 'flex', 'none', 'none']}
         />
-        <Switch
-          color="green"
-          isChecked={isDark}
-          onChange={toggleColorMode}
-        />
+
       </Flex>
 
       {/* Mobile Content */}
@@ -153,4 +150,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
